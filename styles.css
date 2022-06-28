@@ -1,13 +1,16 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
 
 * {
     box-sizing:border-box;
     margin: 0;
     padding: 0;
+    font-family: 'Roboto', sans-serif;
 }
 
 body {
-    font-family: 'Roboto', sans-serif;
+   
     font-size: 16px;
     line-height: 1.5;
 }
@@ -34,7 +37,7 @@ body {
 .navbar .logo {
     font-size: 24px;
     color: #f9faf8;
-    font-weight: bold;
+    font-weight:bolder;
 }
 
 .navbar ul{
@@ -57,12 +60,14 @@ body {
 .header {
     background-color: #1F2937;
     padding: 50px 0;
-    max-height:400px;
 }
 
 .header .container {
     display: flex;
+    flex-direction: row;
     gap: 30px;
+    flex-wrap: wrap;
+    
 }
 
 .hero {
@@ -70,6 +75,7 @@ body {
     flex-direction:column;
     align-items:flex-start;
     gap: 10px;
+    width: 50%;
 }
 
 .hero-main {
@@ -80,6 +86,7 @@ body {
 
 .hero-second {
     font-size: 18px;
+    font-weight: lighter;
     color: #e5e7eb;
 }
 
@@ -96,6 +103,51 @@ button:hover {
 }
 
 img {
-    max-width: 50%;
-    max-height: 300px;
+   max-width: 100%;
+}
+
+.image {
+    flex-basis: 40%;
+    margin-left: auto;
+    min-width: 300px;
+    flex-shrink: 0;
+}
+
+.info .container {
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    align-items:center;
+    padding: 30px;
+    gap: 40px;
+}
+
+.info .title {
+    font-size: 36px;
+    font-weight: bolder;
+    color:#1f2937;
+}
+
+.boxes {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-wrap:wrap;
+    font-weight: lighter;
+}
+
+.square {
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    flex: 0;
+    text-align: center;
+}
+
+.box {
+    min-height: 150px;
+    min-width: 150px;
+    border-style: solid;
+    border-radius: 10px;
+    border-color: #3882f6;
 }
