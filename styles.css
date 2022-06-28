@@ -6,11 +6,10 @@
     box-sizing:border-box;
     margin: 0;
     padding: 0;
-    font-family: 'Roboto', sans-serif;
 }
 
 body {
-   
+    font-family: 'Roboto', sans-serif;
     font-size: 16px;
     line-height: 1.5;
 }
@@ -119,7 +118,7 @@ img {
     justify-content:center;
     align-items:center;
     padding: 30px;
-    gap: 40px;
+    gap: 20px;
 }
 
 .info .title {
@@ -131,9 +130,11 @@ img {
 .boxes {
     display: flex;
     align-items: center;
-    justify-content: space-around;
+    justify-content: space-evenly;
     flex-wrap:wrap;
     font-weight: lighter;
+    gap: 15px;
+    flex-shrink: 0;
 }
 
 .square {
@@ -142,6 +143,7 @@ img {
     align-items: center;
     flex: 0;
     text-align: center;
+    gap:10px;
 }
 
 .box {
@@ -150,4 +152,90 @@ img {
     border-style: solid;
     border-radius: 10px;
     border-color: #3882f6;
+}
+
+.quote {
+    background-color: #e5e7eb;
+}
+
+.quote .container {
+    display: flex;
+    flex-direction: column;
+    padding: 70px;
+}
+
+.quote .container .top {
+    font-size: 36px;
+    font-weight: lighter;
+}
+
+.credit {
+    align-self:flex-end;
+    font-size:36px;
+}
+
+.ad {
+    padding: 0px 50px;
+}
+
+.ad .container {
+    display:flex;
+    background-color: #3882f6;
+    border-radius: 10px;
+    align-items: center;
+    justify-content: space-around;
+    padding: 30px;
+    color: white;
+    margin: 70px auto;
+}
+
+.ad p {
+    font-weight: lighter;
+}
+
+.ad .head {
+    font-weight: normal;
+}
+
+.sign-up {
+    border-color: white;
+    border-style:solid;
+    border-width: 1px;
+    border-radius: 7px;
+    padding: 1px 20px;
+    flex-shrink: 1;
+}
+
+.sign-up:hover {
+    background-color: #2c13d0;
+}
+
+footer {
+    display:flex;
+    background-color: #1F2937;
+    color:white;
+    text-align: center;
+    padding: 30px 0;
+    font-weight: 100;
+    font-size: small;
+}
+
+@media (max-width: 768px) {
+    .header .container {
+        flex-direction: column;
+        text-align: center;
+        align-items: center;
+    }
+    button {
+        align-self: center;
+    }
+    
+    img {
+        max-height:fit-content
+    }
+
+    .image {
+        display:flex;
+        justify-content:center;
+    }
 }
